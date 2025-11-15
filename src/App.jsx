@@ -1,26 +1,29 @@
-import { useState } from 'react'
+import React from 'react'
+import HeaderHero from './components/HeaderHero'
+import TrustBar from './components/TrustBar'
+import Services from './components/Services'
+import Process from './components/Process'
+import Checklist from './components/Checklist'
+import Gallery from './components/Gallery'
+import FAQ from './components/FAQ'
+import Education from './components/Education'
+import TestimonialsCTA from './components/TestimonialsCTA'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
+    <div style={{ backgroundColor: '#FAFAFA', color: '#455A64', fontFamily: 'Roboto, Montserrat, Inter, system-ui, sans-serif' }}>
+      <HeaderHero />
+      <TrustBar />
+      <Services />
+      <Process />
+      <Checklist />
+      <Gallery />
+      <FAQ />
+      <Education />
+      <TestimonialsCTA />
+      <footer className="text-center py-6 text-sm" style={{ backgroundColor: '#FAFAFA' }}>
+        © URBANROOF - Expert Home Inspections Since 2015
+      </footer>
     </div>
   )
 }
